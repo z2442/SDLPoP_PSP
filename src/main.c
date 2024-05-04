@@ -27,11 +27,9 @@ PSP_MODULE_INFO("SDL_PoP_PSP", 0, 1, 1);
 
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER | THREAD_ATTR_VFPU);
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[])  {
 {
-	g_argc = argc;
-	g_argv = argv;
 	pop_main();
 	return 0;
 }
-
+}
